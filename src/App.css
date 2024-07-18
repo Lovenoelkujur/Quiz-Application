@@ -1,38 +1,136 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: #313131;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  background-color: skyblue;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 40%;
+  height: 60vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main h1{
+  background-color: yellow;
+  color: blueviolet;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.score{
+  color: brown;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.q-card{
+  background-color: bisque;
+  padding: 1rem;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.q{
+  background-color: #313131;
+  color: whitesmoke;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+
+.grid-container{
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: auto auto ;
+  background-color: #2196F3;
+  padding: 1rem;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 0.8);
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.ans{
+  background-color: greenyellow;
+  color: blue;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+.result-container{
+  background-color: #313131;
+  width: 100%;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.result-main{
+  background-color: gold;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-main h1{
+  color: blue;
+}
+
+.result-main p{
+  background-color: greenyellow;
+  color: blueviolet;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.result-main h2{
+  color: red;
+  padding: 1rem;
+}
+
+.result-main ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: start;
+}
+
+.result-main button{
+  background-color: skyblue;
+  color: blueviolet;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
 }
