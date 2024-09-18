@@ -4,9 +4,9 @@ This is a simple quiz application built using React. It presents multiple-choice
 
 ## Screenshots
 
-![Quiz Application Screenshot](../quiz-app/public/screenshort/home.png)
+![Quiz Application Screenshot](./public/screenshort/home.png)
 
-![Quiz Result Screenshot](../quiz-app/public/screenshort/result.png)
+![Quiz Result Screenshot](./public/screenshort/result.png)
 
 ## Features
 

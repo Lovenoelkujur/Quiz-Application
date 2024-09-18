@@ -155,14 +155,15 @@ const Quiz = () => {
         <div className='result-container'>
             <div className='result-main'>
                 <h1>Quiz Finished!</h1>
-                <p>Your Score: {score}</p>
+                <p className='result-score'>Your Score: {score}</p>
                 {wrongAnswers.length > 0 && (
                     <>
                         <h2>Incorrect Answers</h2>
                         <ul>
                         {wrongAnswers.map((question, index) => (
                             <li key={index}>
-                            {question.question} - Correct Answer: {question.answer}
+                              <p className='result-question'>{question.question}</p>
+                              <p className='result-answer'>Correct Answer: {question.answer}</p>
                             </li>
                         ))}
                         </ul>
